@@ -1,0 +1,28 @@
+name: CI/CD - Build Docker e Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar o repositório
+      uses: actions/checkout@v3
+
+    - name: Login no Docker Hub (opcional)
+      if: false  # configure se quiser subir imagem
+      run: echo "docker login"
+
+    - name: Construir imagem Docker
+      run: docker build -t fiap-api-alunos .
+
+    - name: Simular deploy em Staging
+      run: echo "Deploy em Staging - Simulado"
+
+    - name: Simular deploy em Produção
+      run: echo "Deploy em Produção - Simulado"
