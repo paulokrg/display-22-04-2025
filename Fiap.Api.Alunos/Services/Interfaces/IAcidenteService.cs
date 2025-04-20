@@ -1,4 +1,5 @@
-﻿using Fiap.Api.Alunos.Models;
+﻿
+using Fiap.Api.Alunos.Models;
 
 namespace Fiap.Api.Alunos.Services.Interfaces
 {
