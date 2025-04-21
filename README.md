@@ -18,15 +18,14 @@ O projeto **SmartCities** foi desenvolvido com base no conceito de Cidades Intel
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/smartcities-devops.git
-cd smartcities-devops
+git clone https://github.com/DiegoBr7/display-22-04-2025
 ```
 
 2. Build e execução via Docker:
 
 ```bash
 docker build -t smartcities-app .
-docker run -d -p 5000:80 smartcities-app
+docker run -d -p 8080:8080 -p 8081:8081 smartcities-app
 ```
 
 3. Ou utilizando o Docker Compose (caso tenha o `docker-compose.yml` configurado):
@@ -98,12 +97,12 @@ az webapp deployment source sync --name smartcities-app --resource-group rg-smar
    **Paulo Cauê Krüger Costa**  
    **Gabriel Paulucci**  
   Estudantes de Análise e Desenvolvimento de Sistemas - FIAP  
-  GitHub: [https://github.com/DiegoBr7/display-22-04-2025/tree/main](https://github.com/DiegoBr7/display-22-04-2025/tree/main)
+  GitHub: https://github.com/DiegoBr7/display-22-04-2025/tree/main
 
 ## 📄 Outros Detalhes
-
-- O projeto já possui um `Dockerfile` pronto para build e execução em containers.
-- Todos os prints do processo de CI/CD, desde a criação do repositório até o deploy, estão documentados no arquivo PDF incluso na entrega.
-- Aplicação acessível via Azure com monitoramento de desempenho e logs disponíveis no portal.
+O projeto possui um Dockerfile para a containerização da aplicação.
+A automação do build e deploy está configurada através do workflow do GitHub Actions (.github/workflows/seu_arquivo_yml.yml).
+O deploy é feito diretamente para o slot de produção do Azure App Service fiapentrega03.
+Para acessar a aplicação implantada, utilize a URL fornecida pelo Azure App Service.
 
 ---
