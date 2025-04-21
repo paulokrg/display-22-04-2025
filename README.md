@@ -98,7 +98,7 @@ az webapp deployment source sync --name smartcities-app --resource-group rg-smar
    **Paulo Cauê Krüger Costa**  
    **Gabriel Paulucci**  
   Estudantes de Análise e Desenvolvimento de Sistemas - FIAP  
-  GitHub: [github.com/seu-usuario](https://github.com/seu-usuario)
+  GitHub: [https://github.com/DiegoBr7/display-22-04-2025/tree/main](https://github.com/DiegoBr7/display-22-04-2025/tree/main)
 
 ## 📄 Outros Detalhes
 
